@@ -1,6 +1,6 @@
 # phishtest
 
-A new Flutter project.
+A website to test your ability to identify phishing emails. Tailored for easy accessability with a simple design to appeal to children and older adults with gamified aspects to encourage engagement to result in actual learning.
 
 ## Getting Started
 
