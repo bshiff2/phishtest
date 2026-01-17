@@ -15,22 +15,19 @@ class WelcomePage extends StatelessWidget {
             children: [
               // Welcome Heading
               Padding(
-                padding: const EdgeInsets.only(top: 24.0, bottom: 48.0),
+                padding: const EdgeInsets.only(top: 24.0, bottom: 24.0),
                 child: Column(
                   children: [
                     Text(
                       'Hello, and welcome to',
                       style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-                            fontWeight: FontWeight.w500,
+                            fontWeight: FontWeight.bold,
                           ),
                     ),
                     const SizedBox(height: 8.0),
-                    Text(
-                      '\nPhishTest',
-                      style: Theme.of(context).textTheme.headlineLarge?.copyWith(
-                            fontWeight: FontWeight.bold,
-                            fontStyle: FontStyle.italic,
-                          ),
+                    SizedBox(
+                      height: 200,
+                      child: Image.asset('assets/images/PhishTestLogo.png'),
                     ),
                   ],
                 ),
@@ -66,12 +63,6 @@ class WelcomePage extends StatelessWidget {
                       style: Theme.of(context).textTheme.bodyLarge,
                     ),
                     const SizedBox(height: 16.0),
-
-                    // Replace with your images
-                    // Example:
-                    // Image.asset('assets/image_name.png'),
-                    // const SizedBox(height: 16.0),
-                    // Image.asset('assets/another_image.png'),
                   ],
                 ),
               ),
@@ -86,7 +77,7 @@ class WelcomePage extends StatelessWidget {
                   child: ElevatedButton(
                     onPressed: () {
                       // Navigate to game page
-                      Navigator.of(context).pushNamed('/game');
+                      Navigator.of(context).pushNamed('/gamepage');
                     },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.green.shade200,
