@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'welcomepage.dart';
+import 'gamepage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,6 +18,9 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
       home: const WelcomePage(),
+      routes: {
+        '/gamepage': (context) => const GamePage(),
+      },
     );
   }
 }
